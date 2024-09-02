@@ -20,6 +20,8 @@ export default function Login({ searchParams }: { searchParams: Message }) {
       password,
     });
 
+    const hey = "hey";
+
     if (error) {
       return encodedRedirect("error", "/login", "Could not authenticate user");
     }

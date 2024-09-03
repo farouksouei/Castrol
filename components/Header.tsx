@@ -16,7 +16,7 @@ export default function Header() {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 480);
         };
-        handleResize(); // Initial check
+        handleResize(); // Initial checkk
 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);

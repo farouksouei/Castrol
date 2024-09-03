@@ -105,7 +105,7 @@ const styles = {
 };
 
 const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
-    const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = React.useState(false);
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -119,7 +119,6 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 768);
         };
-
         handleResize(); // Initial check
 
         window.addEventListener('resize', handleResize);

@@ -106,9 +106,9 @@ const CustomComponent: React.FC<CustomComponentProps> = ({ footnote, photo, head
     };
 
     // To manage responsiveness, you can use the window width
-    const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
-
+    const [isMobile, setIsMobile] = React.useState(false);
     React.useEffect(() => {
+
         const handleResize = () => {
             setIsMobile(window.innerWidth < 768);
         };

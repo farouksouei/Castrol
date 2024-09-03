@@ -10,7 +10,7 @@ import TwoPartComponent from "@/components/castrol/TwoPartComponent";
 
 
 export default function Header() {
-    const [isMobile, setIsMobile] = React.useState(false);
+    const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
 
     React.useEffect(() => {
         const handleResize = () => {

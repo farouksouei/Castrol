@@ -74,6 +74,12 @@ const styles = {
         fontWeight: '300',
         marginLeft: '50px',
     },
+    advantagesMobile: {
+        listStyleType: 'none',
+        paddingLeft: '0',
+        color: "#928F8F",
+        fontWeight: '300',
+    },
     advantageItem: {
         color: 'red',
         fontWeight: '900',
@@ -100,7 +106,7 @@ const CustomComponent: React.FC<CustomComponentProps> = ({ footnote, photo, head
     };
 
     // To manage responsiveness, you can use the window width
-    const [isMobile, setIsMobile] = React.useState(false);
+    const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
 
     React.useEffect(() => {
         const handleResize = () => {
@@ -139,7 +145,7 @@ const CustomComponent: React.FC<CustomComponentProps> = ({ footnote, photo, head
                 {advantages.length > 0 && (
                     <>
                         <h3 style={styles.header}>Advantages</h3>
-                        <ul style={styles.advantages}>
+                        <ul style={isMobile ? styles.advantagesMobile : styles.advantages}>
                             {advantages.map((advantage, index) => (
                                 <li style={styles.advantageItem2} key={index}>
                                     <span style={styles.advantageItem}>•</span> {advantage}

@@ -5,7 +5,7 @@ import localFont from 'next/font/local'
 const aspekta = localFont({
   src: [
     {
-      path: '../public/Fieldwork2HumHair.woff2',
+      path: '../public/Fieldwork11HumRegular.woff2',
       weight: '100',
     },
   ],

@@ -143,7 +143,7 @@ const CustomComponent: React.FC<CustomComponentProps> = ({ footnote, photo, head
                     float: 'left',}}>{formatParagraph(paragraph)}</p>
                 {advantages.length > 0 && (
                     <>
-                        <h3 style={styles.header}>Advantages</h3>
+                        <h3 style={styles.header}>Avantages</h3>
                         <ul style={isMobile ? styles.advantagesMobile : styles.advantages}>
                             {advantages.map((advantage, index) => (
                                 <li style={styles.advantageItem2} key={index}>

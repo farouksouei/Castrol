@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import Image from 'next/image';
 import { createClient } from '@/utils/supabase/client';
 import swal from "sweetalert";
+import {Video} from "@/components/Video";
 
 
 // Define the props type
@@ -167,9 +168,9 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
             await swal("Erreur", "Une erreur est survenue", "error");
         } else {
             if (winner) {
-                await swal("Félicitations", "Vous avez gagné", "success");
+                await swal("Félicitations", "Votre inscription a été effectué", "success");
             } else {
-                await swal("Merci", "Merci pour votre participation vous n'avez pas gagné", "success");
+                await swal("Félicitations", "Votre inscription a été effectué", "success");
             }
         }
     };
@@ -180,7 +181,7 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
         >
             {isMobile && (
                 <div style={styles.imageContainer}>
-                    <Image src={imageUrl} alt="Photo" width={1500} height={1500} className="w-full" />
+                    <Video />
                 </div>
             )}
             <div style={styles.part}>
@@ -318,7 +319,7 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
             {!isMobile && (
                 <div style={styles.part}>
                     <div style={styles.imageContainer}>
-                        <Image src={imageUrl} alt="Photo" width={1500} height={1500} className="w-full"/>
+                        <Video />
                     </div>
                 </div>
             )}

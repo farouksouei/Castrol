@@ -23,7 +23,6 @@ const styles = {
         borderRadius: '8px',
         maxWidth: '1200px',
         margin: '20px auto',
-        fontFamily: 'Fieldwork, sans-serif',
     },
     containerMobile: {
         flexDirection: 'column' as 'column',

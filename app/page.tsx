@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import castrol from "@/public/assets/castrolEdge.svg";
 import Image from 'next/image';
 
+
 export default async function Index() {
   const canInitSupabaseClient = () => {
     // This function is just for the interactive tutorial.
@@ -39,7 +40,7 @@ export default async function Index() {
                   header={"Castrol EDGE"}
                   paragraph={"Plus petits et ultra-puissants, les moteurs modernes sont à la pointe de la technologie et de l’ingénierie. Dans ces moteurs évolués, le lubrifiant est soumis à des pressions de plus en plus fortes, qui peuvent engendrer des frictions.\n" +
                       " \n" +
-                      "Castrol EDGE avec Fluid TITANIUM transforme sa structure physique, se durcissant aux points d’extrême pression, pour réduire les contacts métal contre métal et les frictions. Quand la pression retombe, le lubrifiant reprend un écoulement fluide. Présentant une meilleure résistance à la pression, Castrol EDGE avec Fluid TITANIUM se transforme pour réduire de 20 % les frictions impactant la performance."}
+                      "Castrol EDGE avec Fluid TITANIUM transforme sa structure physique, se durcissant aux points d’extrême pression, pour réduire les contacts métal contre métal et les frictions. Quand la pression retombe, le lubrifiant reprend un écoulement fluide. Présentant une meilleure résistance à la pression, Castrol EDGE avec Fluid TITANIUM se transforme pour réduire de 20 % les frictions impactant la performance."}
                   advantages={
                       [
                           "Se transforme pour mieux résister lorsque la pression est maximale, assurant ainsi la protection de votre moteur",
@@ -58,7 +59,7 @@ export default async function Index() {
                   header={"CASTROL MAGNATEC"}
                   paragraph={"La circulation s’est considérablement densifiée ces dix dernières années. Ce n’est pas seulement désagréable, cela endommage peu à peu votre moteur et ce, de façon permanente." +
                       " \n" +
-                      "Face à l’urbanisation croissante, nous avons développé Castrol MAGNATEC doté de la technologie DUALOCK. La technologie DUAL OCK MAGNATEC innovante de Castrol constitue une première mondiale. Les molécules adhèrent aux pièces critiques du moteur et se lient entre elles pour protéger le moteur contre l’usure liée à la montée en température et aux démarrages fréquents. Elles forment ainsi un film protecteur renforcé qui réduit de 50 %* l’usure liée à la montée en température et celle liée aux démarrages fréquents."}
+                      "Face à l’urbanisation croissante, nous avons développé Castrol MAGNATEC doté de la technologie DUALOCK. La technologie DUALOCK MAGNATEC innovante de Castrol constitue une première mondiale. Les molécules adhèrent aux pièces critiques du moteur et se lient entre elles pour protéger le moteur contre l’usure liée à la montée en température et aux démarrages fréquents. Elles forment ainsi un film protecteur renforcé qui réduit de 50 %* l’usure liée à la montée en température et celle liée aux démarrages fréquents."}
                   footnote={"* Testé par rapport à la limite d’usure API SN du test Sequence IVA et à la limite d’usure ACEA du test OM646LA."}
               ></CustomComponent>
           </div>

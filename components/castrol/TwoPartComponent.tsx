@@ -24,7 +24,6 @@ const styles = {
         borderRadius: '8px',
         maxWidth: '1200px',
         margin: '20px auto',
-        fontFamily: 'Fieldwork, sans-serif',
     },
     containerMobile: {
         flexDirection: 'column' as 'column',
@@ -69,18 +68,21 @@ const styles = {
         color: 'red',
         fontSize: '18px',
         margin: '20px 0',
+        fontWeight: 'bold'
     },
     radioGroup: {
         display: 'flex',
         flexDirection: 'column' as 'column',
     },
     radioInput: {
-        marginBottom: '5px',
+        margin: '5px',
         cursor: 'pointer',
+        padding: '5px',
     },
     radioLabel: {
         color: '#928F8F',
         fontSize: '16px',
+        marginLeft: '15px'
     },
     inputFocus: {
         borderBottomColor: 'red', // Bottom border color changes to red on focus
@@ -168,9 +170,27 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
             await swal("Erreur", "Une erreur est survenue", "error");
         } else {
             if (winner) {
-                await swal("Félicitations", "Votre inscription a été effectué", "success");
+                await swal({
+                    title: "Félicitations",
+                    content: {
+                        element: "span",
+                        attributes: {
+                            innerHTML: "<span>Votre inscription au jeu <span style='color: #008D3F;'>《Nouveaux packaging Castrol》</span> est effectuée avec succès</span>"
+                        }
+                    },
+                    icon: "success"
+                });
             } else {
-                await swal("Félicitations", "Votre inscription a été effectué", "success");
+                await swal({
+                    title: "Félicitations",
+                    content: {
+                        element: "span",
+                        attributes: {
+                            innerHTML: "<span>Votre inscription au jeu <span style='color: #008D3F;'>《Nouveaux packaging Castrol》</span> est effectuée avec succès</span>"
+                        }
+                    },
+                    icon: "success"
+                });
             }
         }
     };

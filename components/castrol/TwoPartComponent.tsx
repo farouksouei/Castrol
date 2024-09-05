@@ -95,8 +95,23 @@ const styles = {
         borderRadius: '4px',
         cursor: 'pointer',
     },
+    button2: {
+        color: 'red',
+        padding: '10px 20px',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyItems: 'center',
+        justifyContent: 'center',
+        fontWeight: 'bold',
+    },
     buttonContainer: {
-        textAlign: 'center' as 'center',
+        display: 'flex',
+        justifyContent: 'space-between', // Align buttons far apart
+        alignItems: 'center',
+        flex: '1 1 100%',
     },
     imageContainer: {
         textAlign: 'center' as 'center',
@@ -195,6 +210,7 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
         }
     };
 
+    // @ts-ignore
     return (
         <div
             style={isMobile ? { ...styles.container, ...styles.containerMobile } : styles.container}
@@ -333,13 +349,17 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
                         <button style={styles.button} type="submit">
                             S'inscrire
                         </button>
+                        <a style={styles.button2} href="/assets/pdf/ha.pdf" download>
+                            <Image style={{margin: "5px"}} src={'assets/pdf.svg'} alt="Photo" width={24} height={24}/>
+                            Règlement du jeux
+                        </a>
                     </div>
                 </form>
             </div>
             {!isMobile && (
                 <div style={styles.part}>
                     <div style={styles.imageContainer}>
-                        <Video />
+                        <Video/>
                     </div>
                 </div>
             )}

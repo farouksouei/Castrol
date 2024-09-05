@@ -37,7 +37,7 @@ export default async function Index() {
           <div>
               <CustomComponent
                   photo={"/assets/castrolEdge.svg"}
-                  header={"Castrol EDGE"}
+                  header={"CASTROL EDGE"}
                   paragraph={"Plus petits et ultra-puissants, les moteurs modernes sont à la pointe de la technologie et de l’ingénierie. Dans ces moteurs évolués, le lubrifiant est soumis à des pressions de plus en plus fortes, qui peuvent engendrer des frictions.\n" +
                       " \n" +
                       "Castrol EDGE avec Fluid TITANIUM transforme sa structure physique, se durcissant aux points d’extrême pression, pour réduire les contacts métal contre métal et les frictions. Quand la pression retombe, le lubrifiant reprend un écoulement fluide. Présentant une meilleure résistance à la pression, Castrol EDGE avec Fluid TITANIUM se transforme pour réduire de 20 % les frictions impactant la performance."}

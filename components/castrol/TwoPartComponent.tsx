@@ -349,7 +349,7 @@ const TwoPartComponent: React.FC<TwoPartComponentProps> = ({ imageUrl }) => {
                         <button style={styles.button} type="submit">
                             S'inscrire
                         </button>
-                        <a style={styles.button2} href="/assets/pdf/ha.pdf" download>
+                        <a style={styles.button2} href="/assets/pdf/Reglement.pdf" download>
                             <Image style={{margin: "5px"}} src={'assets/pdf.svg'} alt="Photo" width={24} height={24}/>
                             Règlement du jeux
                         </a>
